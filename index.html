@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт по Майорке</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Guide Book Country</span>
+        </div>
+        <div id="about">
+            <a href="#" title="Регионы" onclick="slowScroll('#main')">Регионы</a>
+            <a href="#"  onclick="slowScroll('#overiew')" title="Преимущества" >Преимущества</a>
+            <a href="#"  onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+            <a href="#"  onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>Майорка</h1>
+        <h3>жемчужина Средиземноморья </h3>
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h2>Это интересно!</h2>
+            <span>Все что необходимо знать при путешествии на Майорку.
+                Ответы на самые главные вопросы.
+            </span>
+        </div>
+        <div class="text">
+            <span>Майорка- самый крупный из Балеарских островов.Принадлежит Испании и считается самым красивым островом Средиземного моря.
+                Остров находится на пересечении главных торговых путей, славится экологической чистотой и благоприятным средиземноморским климатом. 
+                На этом солнечном курорте много прекрасных пляжей, живописных заливов, гордых утесов и уединенных бухт.
+                 Остров обладает превосходно развитой инфраструктурой, сетью фешенебельных отелей, ресторанов и кафе.</span>
+        </div>
+    </div>
+
+    <div id="overview">
+        <h2>Регионы</h2>
+        <h4>курорты на любой вкус</h4>
+<div class="img">
+    <img src="https://lh3.googleusercontent.com/proxy/4P1ZqGRmtuUcMgMzG4W09D1arzENPC-7hGMwC8P6DuInGNrMsTxapeGUJ7AOS3oDgST5PfIP3cBHBMdOSzQ9D35QTrbfQ1srto2J2lU4LIH8IinEKi9J8lAjFA65o0vyrr5kkpxLDaU1DgV5S-shTtWDWDc1DrAYWwkxTwQrZzmukeq78kkYEzUw" alt="">
+    <span>Пальма-де-Майорка</span>
+</div>
+<div class="img">
+    <img src="https://andalusiaguide.ru/wp-content/uploads/2018/02/dronepicr-%D0%9F%D0%BB%D1%8F%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F-%D0%AD%D0%BB%D1%8C-%D0%90%D1%80%D0%B5%D0%BD%D0%B0%D0%BB%D1%8C.jpg" alt="">
+    <span>Ареналь</span>
+</div>
+<div class="img">
+    <img src="https://st-img.columbista.com/data/poi/platja-de-palma/middle_platja-de-palma.jpg" alt="">
+    <span>Плая-де-Пальма</span>
+</div>
+<div class="img">
+    <img src="https://life-globe.com/image/cache/catalog/spain/mallorca/cala-major/cala-major-mallorca-1-915x508.jpg" alt="">
+    <span>Кала-Майор</span>
+</div>
+<div class="img">
+    <img src="http://touroko.com/wp-content/uploads/2016/05/1075263_730x497.jpg" alt="">
+    <span>Ильетас</span>
+</div>
+<div class="img">
+    <img src="http://ic.pics.livejournal.com/lezhnev_sergey/51147689/1203799/1203799_900.jpg" alt="">
+    <span>Пальма Нова</span>
+</div>
+<div class="img">
+    <img src="https://lh3.googleusercontent.com/proxy/W_rQgT7h2Cc4X7pNlinQl011iztJa115u6DF6f19bp-0fNT7YK5tvd2qp1FwG6y4aDvtaHR-a-XCAU8XJhutvM1V62_nLusbSSPd6jHtGEBbwhyVqQTENGrpCGJlEV5YHDxTj149lM1v6nun1OGp3E5Dg_y1BFFvKqwq_pr4L2iG3Q" alt="">
+    <span>Магалуф</span>
+</div>
+<div class="img">
+    <img src="https://ais-akamai.rtl.de/masters/1226113/1686x0/wk2gznff6flftzqclnvyfg6o6y.jpg" alt="">
+    <span>Санта Понса</span>
+</div>
+<div class="img">
+    <img src="https://estate-spain.com/assets/blog-images/obzory/nedvizhimost-na-mayorke-chto-kupit/8.jpg" alt="">
+    <span>Пагуэра</span>
+</div>
+<div class="img">
+    <img src="https://lh3.googleusercontent.com/proxy/MZDtZmpurMIas5wyMHkvzwbNDC2Q0uiMSlKMFKpht13ZSUnTi5eoKIoS1V-JfLfvC9EmboMTeSfQy9vQvx7R7_uGeY49LpfYkx-Vtav18XOAgOHT87DWLxhITuU" alt="">
+    <span>Алькудия</span>
+</div>
+    </div>
+    <div id="contacts">
+        <center><h5>Обратная связь</h5></center>
+        <form id="form_input">
+            <label for="Name">Имя<span>*</span></label><br>
+            <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+            <label for="email">Ваша почта<span>*</span></label><br>
+            <input type="email" placeholder="Введите email" name="email" id="email">
+            <label for="message">Сообщение<span>*</span></label><br>
+            <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea>
+            <div id="mess_send" class="btn">Отправить</div>
+        </form>
+    </div>
+
+    <div id="faq">
+        <div>
+            <span class="title">Транспорт</span><br>
+            <span class="heading">Как передвигаться по острову без авто?</span>
+            <p>Общественный транспорт острова Майорка представлен городскими автобусами и электричками в столице острова Пальме и междугородними автобусами, связывающими основные населенные пункты и курорты острова.</p>
+            <span class="heading">Сколько стоит такси на Майорке?</span>
+            <p>Стоимость такси на Майорке контролируется законом, цена должны соответствовать тем, что изложены в буклете, выпущенном в местных органах власти.
+                 После 21:00, по воскресеньям и в праздничные дни стоимость проезда увеличивается на 15%. Дополнительно также может взиматься сбор за багажное место (это не относится к детским и инвалидным коляскам). Маловероятно, что водители будут принимать оплату отличную от наличных, поэтому убедитесь, что у вас есть нужно количество без сдачи, у водителя ее может не быть.Примерная стоимость такси от 50-150 евро.</p>
+</div>
+        <div>
+        <span class="title">Кухня</span><br>
+                <span class="heading">Какие вкусные блюда в майоркинской кухне?</span>
+            <p> В первую очередь стоит сказать слово о необыкновенно вкусных блюдах из баранины. Майоркинская баранина, в отличии от бытующего предубеждения о «специфическом запахе и привкусе», совершенно не пахнет и не имеет того привкуса, который характерен дляпривычного бараньего мяса. Два самых знаменитых блюда из баранины - это бараньи ребрышки чулетас де кордеро ( chuletas de cordero) и запеченная в печи баранья лопатка (paletilla de cordero).
+                Но самым неожиданным будет дегустация запечённого в печи мяса козленка (Cabrito al horno ) или козленка в меде с хрустящей корочкой (Cabrito a la miel).
+                Даже находясь под влиянием мусульманского мира, местные жители сохранили свинину в традиционных рецептах.</p>
+                <span class="heading">Какую рыбу стоит заказать на Майорке?</span>
+                <p>Стоит попробовать традиционные блюда из средиземноморской рыбы. Безпроигрышный выбор – запеченные в соли - дорада а ла саль (dorada a la sal) и морской окунь а ла саль (lubina a la sal).
+                    Камбала и морской язык готовятся на гриле «а ла планча (a la plancha)», буквально с каплей оливкового масла или так же запекаются в соли.</p>
+                
+</div>
+<div>
+    <span class="title">Климат и погода на Майорке</span><br>
+        <span class="heading">Какой климат на Майорке?</span>
+        <p>Климат Майорки преимущественно средиземноморский, комфортный для пляжного отдыха в течение полугода — с мая по октябрь. Лето на испанском острове жаркое, но не душное, а зима мягкая — сравнительно теплая, умеренно влажная.</p>
+            <span class="heading">Когда стартует туристический сезон?</span>
+        <p>Туристический сезон на Майорке стартует в конце апреля и в основном завершается в октябре. Высокий сезон занимает все лето, с июня по август, связан с наибольшим количеством отдыхающих. Самая жаркая погода на острове характерна для июля, и эта тенденция сохраняется из года в год. Бархатный курортный сезон, столь полюбившийся семьям с детьми, длится с сентября до середины октября, пока не закончится купальный сезон.</p>
+</div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id){
+            $('html','body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if ($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>
