@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт по Майорке</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
@@ -17,6 +19,8 @@
             <a href="#"  onclick="slowScroll('#overiew')" title="Преимущества" >Преимущества</a>
             <a href="#"  onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
             <a href="#"  onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                Авторизация</button>
         </div>
     </header>
 
@@ -87,7 +91,7 @@
     
     
     <div id="feedback">
-        <center><table></center>
+        <center><table class="table table-dark table-striped"></center>
             <tr>
             <th>Регионы</th>
             <th>Цена</th>
@@ -118,27 +122,105 @@
         
         <center><h3>Обратная связь</h3></center>
         <form id="form_input" method="POST">
-            <label for="Name"><span>Имя</span></label><br>
-            <input type="text" placeholder="Ваше имя" name="name" id="name"><br>
-            <label for="phone"><span>Телефон</span></label><br>
-            <input type="nomber" placeholder="Ваш номер телефона" name="nomber" id="nomber"><br>
-            <label for="city"><span>Выбрать город</span></label><br>
-            <select name="city" id="city">
+            <label for="Name" class="form-label"><span>Имя</span></label><br>
+            <input type="text" class="form-control" placeholder="Ваше имя" name="name" id="name"><br>
+            <label for="phone" class="form-label"><span>Телефон</span></label><br>
+            <input type="nomber" class="form-control" placeholder="Ваш номер телефона" name="nomber" id="nomber"><br>
+            <label for="city" class="form-label"><span>Выбрать город</span></label><br>
+            <select class="form-select" name="city" id="city">
                 <option>Ареналь</option>
                 <option>Ильетас</option>
                 <option>Магалуф</option>
                 <option>Алькудия</option>
             </select><br>
-            <label for="message"><span>Коментарий</span></label><br>
-            <textarea placeholder="Ваш коментарий" name="message" id="message" cols="30" rows="10"></textarea><br>
-            <button type="submit">Заказать</button>
+            <label class="form-label" for="message"><span>Коментарий</span></label><br>
+            <textarea class="form-control" placeholder="Ваш коментарий" name="message" id="message" cols="30" rows="10"></textarea><br>
+            <button type="submit" class="btn btn-dark">Заказать</button>
         </form>
 
 
         
     </div>
+
+    <div class="flex-container">
+        <div class="textimg">Пагуэра</div>
+        <div>
+            <img src="img/8.jpg" width="100%"  height="361px">
+        </div>
+        <div>
+            <img src="img/cala-major-mallorca-1-915x508.jpg" width="100%"  height="361px">
+        </div>
+    </div>
     
+    <div class="flex-container">
+        <div>
+            <img src="img/8.jpg" width="100%"  height="241px">
+        </div>
+        <div>
+            <img src="img/cala-major-mallorca-1-915x508.jpg" width="100%"  height="241px">
+        </div>
+        <div>
+            <img src="img/middle_platja-de-palma.jpg" width="100%"  height="241px">
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div>
+            <img src="img/8.jpg" width="100%"  height="187px">
+            <div></div>
+        </div>
+        <div>
+            <img src="img/cala-major-mallorca-1-915x508.jpg" width="100%"  height="187px">
+        </div>
+        <div>
+            <img src="img/middle_platja-de-palma.jpg" width="100%"  height="187px">
+        </div>
+        <div>
+            <img src="img/1203799_900.jpg" width="100%"  height="187px">
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div>
+            <img src="img/8.jpg" width="100%"  height="155px">
+        </div>
+        <div>
+            <img src="img/cala-major-mallorca-1-915x508.jpg" width="100%"  height="155px">
+        </div>
+        <div>
+            <img src="img/middle_platja-de-palma.jpg" width="100%"  height="155px">
+        </div>
+        <div>
+            <img src="img/1203799_900.jpg" width="100%"  height="155px">
+        </div>
+        <div>
+            <img src="img/1075263_730x497.jpg" width="100%"  height="155px" >
+        </div>
+    </div>
+
+    <!-- Авторизация -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="email" class="form-label"><span>Ваша почта</span></label><br>
+                <input type="text" class="form-control" placeholder="Введите вашу почту" name="email" id="email"><br>
+                <label for="password" class="form-label"><span>Ваш пароль</span></label><br>
+                <input type="password" class="form-control" placeholder="Введите пароль" name="password" id="password"><br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отмена</button>
+              <button type="button" class="btn btn-secondary" onclick="alerted()">Вход</button>
+            </div>
+          </div>
+        </div>
+      </div>
     
+      
     
     
     
@@ -190,7 +272,7 @@
 </div>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         function slowScroll(id){
@@ -205,6 +287,21 @@
             else
             $("header").attr("class", "fixed");
         });
+
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+        })
+        let x =0
+        function alerted(){
+            alert('Введите данные для авторизации')
+            let abc = document.querySelector('.modal-title')
+            abc.textContent = 'Авторизация' + x++
+        }
+
+
     </script>
 </body>
 </html>

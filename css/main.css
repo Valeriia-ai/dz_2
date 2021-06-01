@@ -331,7 +331,7 @@ h1, h2, h3, h4, h5 {
 
 
 /*Таблица*/
-table {
+/* table { 
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 14px;
     border-collapse: collapse;
@@ -352,4 +352,21 @@ table {
     }
     th:first-child, td:first-child {
     text-align: left;
+    } */
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        background: #4f1c75;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        position: relative;
+      }
+    .textimg{
+        position: absolute;
+        left: 25px;
+        bottom: 35px;
+        color: rgb(5, 36, 211);
     }
